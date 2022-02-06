@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Home
+{% endblock %}
+
+{% block main %}
+<h1>Quiz Time!</h1>
+<form action="/" method="post">
+    <div>
+        <input autofocus autocomplete="off" name="name" placeholder="Enter name here" type="text">
+    </div>
+    <div>
+        <p>How old is Elon Musk?</p>
+        <input name="age" type="number">
+    </div>
+    <button type="submit">Submit</button>
+</form>
+{% endblock %}
